@@ -12,8 +12,18 @@ function App() {
 			<Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
+			<Route path="/admin" element={<Admin/>}/>
+			<Route path="*" element={<div>ERROR 404 PAGE NOT FOUND</div>}/>
 		</Routes>
 	);
+}
+
+const Admin = ()=>{
+
+	return(
+
+		<div>Admin Page only</div>
+		)
 }
 
 export default App;

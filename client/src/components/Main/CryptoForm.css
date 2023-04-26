@@ -32,6 +32,11 @@
 	flex-direction: column;
 	max-width: 400px;
 	margin: 0 auto;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+
+
   }
   
   .crypto-form__title {
