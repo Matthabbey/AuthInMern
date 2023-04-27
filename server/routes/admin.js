@@ -4,7 +4,7 @@ const auth = require("../middlewares/authentication")
 const { getUsers, grantAccess} = require('../controller/userController');
 
 
-router.get('/', auth, getUsers);
+// router.get('/', auth, getUsers);
 router.get('/users', grantAccess('readAny', 'profile'), getUsers);
 
 

@@ -5,6 +5,7 @@ const app = express();
 const logger = require("morgan")
 const cors = require("cors");
 const connection = require("./db");
+const productRoute = require('./routes/product')
 const userRoutes = require("./routes/users");
 const paymentRoute = require("./routes/paymentRoute")
 const adminRoutes = require("./routes/admin")
@@ -22,6 +23,7 @@ app.use(cors());
 
 // routes
 app.use("/payment", paymentRoute)
+app.use("/api/user", productRoute)
 app.use("/api/admin", adminRoutes)
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
